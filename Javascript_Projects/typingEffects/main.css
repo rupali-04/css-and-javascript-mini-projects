@@ -1,0 +1,43 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+.intro{
+    display: flex;
+    height: 100vh                               ;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./pexels-lukas-574071.jpg);
+    background-size: cover;
+    flex-direction: row;
+    font-family: "Arial";
+    font-size: 1rem;
+    padding: 2rem;
+    color: rgba(255, 228, 196, 0.924);
+}
+
+.typing{
+    position: relative;
+    right: -0.8rem;
+}
+
+.typing::after{
+    content: "";
+    position: absolute;
+    right: -0.5rem;
+    width: 100%;
+
+    height: 7%;
+    border-right: 4px solid rgb(139, 111, 77);
+    animation: blink 0.7s infinite ease;
+}
+
+@keyframes blink {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
